@@ -1,5 +1,6 @@
 body {
   font-family: 'Nunito', sans-serif;
+    margin: 0;
 }
 
 .container {
@@ -8,13 +9,39 @@ body {
 }
 
 nav {
-  display: grid;
-  justify-content: center;
+  display: flex;
+  justify-content: space-between;
+  border-bottom-style: solid;
+  border-width: 1px;
+  border-color: silver;
+  align-items: center;
+}
+
+h1 {
+  font-family: 'Julius Sans One', sans-serif;
+  text-transform: uppercase;
+  margin: 0px 20px;
+}
+
+.title {
+  font-size: 25px;
+}
+
+.sub-title {
+  font-size: 14px;
 }
 
 .list-nav {
   display: flex;
   list-style-type: none;
+  justify-content: space-between;
+  margin: 15px 10px;
+}
+
+.nav-button > a {
+  color: black;
+  text-align: center;
+  text-decoration: none;
 }
 
 .nav-button {
@@ -22,12 +49,18 @@ nav {
   padding: 6px 3px;
   border-radius: 30px;
   width: 150px;
-  text-align: center;
-  text-decoration: none;
   height: 10px;
+  margin: 0px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .nav-button:hover {
   background-color: grey;
+}
+
+.nav-button:hover > a {
   color: white;
 }
+
