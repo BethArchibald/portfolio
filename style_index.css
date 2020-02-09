@@ -1,6 +1,6 @@
 body {
   font-family: 'Julius Sans One', sans-serif;
-    margin: 0;
+  margin: 0;
 }
 
 .container {
@@ -50,13 +50,15 @@ h1 {
   color: black;
   text-align: center;
   text-decoration: none;
+  font-size: 12px;
 }
 
 .nav-button {
   border: 2px solid black;
   padding: 6px 3px;
   border-radius: 30px;
-  width: 150px;
+  width: 100px;
+  height: 10px;
   margin: 0px 10px;
   display: flex;
   align-items: center;
@@ -100,11 +102,27 @@ h1 {
   font-weight: bold;
 }
 
-.video-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 100px;
-  margin-top: 50px;
+.project-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: stretch;
+  background-color: #383838;
+}
+
+.project-videos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-self: stretch;
+  padding: 25px 0px;
+}
+
+.project-title {
+  text-transform: uppercase;
+  color: white;
+  font-size: 2vw;
+  padding: 25px 0px;
 }
 
 .video > iframe {
@@ -112,5 +130,30 @@ h1 {
 }
 
 .about-container {
+  display: flex;
+  flex-direction: column;
   background-color: gainsboro;
+  align-self: stretch;
+  margin: 0px 0px;
+  padding: 20px 0px;
+  align-items: center;
+}
+
+.about-title {
+  font-size: 2vw;
+  font-weight: bold;
+  text-align: center;
+  margin: 15px 0px;
+  text-transform: uppercase;
+}
+
+.about-text {
+  font-size: 14px;
+  margin: 15px 0px;
+}
+
+.about-image {
+  width: 200px;
+  border-radius: 50%;
+  margin: 15px 0px;
 }
