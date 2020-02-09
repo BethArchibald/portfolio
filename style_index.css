@@ -19,6 +19,12 @@ nav {
   align-self: stretch;
 }
 
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 h1 {
   font-family: 'Julius Sans One', sans-serif;
   text-transform: uppercase;
@@ -103,4 +109,8 @@ h1 {
 
 .video > iframe {
   border: 0;
+}
+
+.about-container {
+  background-color: gainsboro;
 }
