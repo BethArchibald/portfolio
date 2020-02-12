@@ -9,51 +9,93 @@
   <title>Beth Archibald</title>
 </head>
 <body>
-  <div class="container">
+  <div class="container" id="beth-archibald">
     <nav>
       <h1>
-        <div class="title">
-          Beth Archibald
-        </div>
-        <div class="sub-title">
-          Motion Graphics Designer
-        </div>
+        <a href="#beth-archibald">
+          <div class="title">
+            Beth Archibald
+          </div>
+          <div class="sub-title">
+            Motion Graphics Designer
+          </div>
+        </a>
       </h1>
       <ul class="list-nav">
-        <li class="nav-button"><a href="about.html">More About Me</a></li>
-        <li class="nav-button"><a href="contact.html">Contact Me</a></li>
-        <li class="nav-button"><a href="Beth_Archibald_CV_29.07.19.pdf">CV</a></li>
+        <li class='nav-button'><a href="#project-section">Projects</a></li>
+        <li class="nav-button"><a href="#about-section">About</a></li>
+        <li class="nav-button"><a href="#contact-section">Contact</a></li>
+        <li class="nav-button"><a href="Beth_Archibald_CV_29.07.19.pdf" download>CV</a></li>
       </ul>
     </nav> 
-    <div class='bio'>
-      Motion Graphics Designer based in London
-    </div>
     <div class='showreel-container'>
+      <div class='bio'>
+        Motion Graphics Designer based in London
+      </div>
       <div class='showreel-title'>
         Showreel
       </div>
       <div class='showreel'>
-        <video controls loop muted autoplay width='640'>
+        <video controls loop muted autoplay>
           <source src='/assets/videos/liquid_transition_1.mp4' type='video/mp4'>
         </video>
       </div>
     </div>
-    <div class='video-container'>
-      <div class='video'>
-        <video controls muted width='320'>
-          <source src='assets/videos/marsh_cottage_final.mp4' type='video/mp4'>
-        </video>
+    <div class='project-container' id='project-section'>
+      <div class='project-title'>
+        Projects
       </div>
-      <div class='video'>
-        <video controls muted width='320'>
-          <source src='assets/videos/gingerbread_final2.mp4' type='video/mp4'>
-        </video>
+      <div class='project-videos'>
+        <div class='video'>
+          <p>Marsh Cottage Christmas</p>
+          <video controls muted width='320'>
+            <source src='assets/videos/marsh_cottage_final.mp4' type='video/mp4'>
+          </video>
+        </div>
+        <div class='video'>
+          <p>Gingerbread Land</p>
+          <video controls muted width='320'>
+            <source src='assets/videos/gingerbread_final2.mp4' type='video/mp4'>
+          </video>
+        </div>
+        <div class='video'>
+          <p>Vintage Tea</p>
+          <video controls muted width='320'>
+              <source src='assets/videos/tea_final.mp4' type='video/mp4'>
+          </video>
+        </div>  
+      </div> 
+    </div>
+    <div class='about-container' id='about-section'>
+      <div class='about-title'>
+        About Me 
       </div>
-      <div class='video'>
-        <video controls muted width='320'>
-            <source src='assets/videos/tea_final.mp4' type='video/mp4'>
-        </video>
+      <div class='image-div'>
+        <img src='assets/img/personal_photo.jpeg' class='about-image'>
       </div>
+      <div class='about-text'>
+        I'm a self-taught motion graphics designer. With a vision to transform a story into life through moving pictures. 
+      </div>
+    </div>
+    <div class='contact-container' id='contact-section'>
+      <div class='social-buttons'>
+        <a href='https://www.linkedin.com/in/beth-archibald-04a12b164/' class='contact-button' target='_blank'>
+          <img src='assets/img/linkedin.jpg'>
+        </a>
+        <a href='mailto:beth.lucy.archibald@gmail.com' class='contact-button' target='_blank'>
+          <img src='assets/img/email.png'>
+        </a>
+        <a href='https://twitter.com/_BethArchibald_' class='contact-button' target='_blank'>
+          <img src='assets/img/twitter.png'>
+        </a>
+        <a href='https://github.com/BethArchibald' class='contact-button' target='_blank'>
+          <img src='assets/img/github_logo.jpg'>
+        </a>
+        <a href='https://vimeo.com/user107464292' class='contact-button' target='_blank'>
+          <img src='assets/img/vimeo.ico'> 
+        </a>
+      </div>
+      <p>Website developed by Beth Archibald • Hosted on Amazon Web Services</p>
     </div>
   </div>
 </body>
