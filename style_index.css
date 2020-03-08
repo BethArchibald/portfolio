@@ -92,11 +92,12 @@ h1 > a {
   margin: 1rem 0.75rem;
 }
 
-.nav-button > a {
-  color: white;
-  text-align: center;
+.list-nav > a {
+  display: flex;
+  width: auto;
   text-decoration: none;
-  font-size: 0.75rem;
+  margin: 0px 10px;
+  border-radius: 30px;
 }
 
 .nav-button {
@@ -104,17 +105,17 @@ h1 > a {
   border-radius: 30px;
   width: 100px;
   height: 23px;
-  margin: 0px 10px;
   display: flex;
   align-items: center;
   justify-content: center;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 0.75rem;
 }
 
 .nav-button:hover {
   background-color: grey;
-}
-
-.nav-button:hover > a {
   color: white;
 }
 
@@ -144,6 +145,7 @@ h1 > a {
     grid-template-columns: 1fr;
     justify-items: center;
     width: 100vw;
+    margin: 1rem 0rem;
   }
 
   .nav-button {
@@ -152,9 +154,6 @@ h1 > a {
     margin: 0.25em 0em;
     opacity: 1;
     background-color: #303030;
-  }
-
-  .nav-button > a {
     font-size: 1.5rem;
   }
 }
@@ -189,8 +188,8 @@ h1 > a {
 
 .showreel {
   display: flex;
-  max-width: 1920px;
-  max-height: 1080px;
+  max-width: 5120px;
+  max-height: 2880px;
   min-width: 320px;
   min-height: 180px;
   width: 100vw;
@@ -248,15 +247,7 @@ h1 > a {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   align-self: stretch;
-  padding: 1vw 0vh;
-}
-
-@media screen and (max-width: 1020px) {
-  .project-videos {
-    display: grid;
-    grid-template-columns: 1fr;
-    align-self: stretch;
-  }
+  padding: 0.5vh 0vw;
 }
 
 .video {
@@ -265,7 +256,7 @@ h1 > a {
   grid-template-columns: 1fr;
   justify-items: center;
   transition: transform 0.35s ease 0s;
-  margin: 1.5vw 10px;
+  margin: 1.5vh 10px;
 }
 
 .video > p {
@@ -277,8 +268,12 @@ h1 > a {
 }
 
 .project-iframe-div {
-  width: 320px;
-  height: 180px;
+  width: 25vw;
+  height: calc((1080 / 1920) * 25vw);
+  max-width: 1920px;
+  max-height: 1080px;
+  min-width: 320px;
+  min-height: 180px;
 }
 
 .project-iframe-div > iframe  {
@@ -291,6 +286,19 @@ h1 > a {
   color: white;
   font-size: 2rem;
   margin: 0.8rem 0rem;
+}
+
+@media screen and (max-width: 1020px) {
+  .project-videos {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-self: stretch;
+  }
+
+  .project-iframe-div {
+    width: 320px;
+    height: 180px;
+  }
 }
 
 .about-container {
@@ -339,14 +347,14 @@ h1 > a {
   color: white;
   text-align: center;
   white-space: nowrap;
-  margin: 0.8vh 0vw;
+  margin: 10px 0px;
 }
 
 .social-buttons {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  padding-top: 1vw;
+  padding-top: 10px;
 }
 
 .contact-button {
@@ -356,7 +364,7 @@ h1 > a {
 .contact-button > img {
   height: 28px;
   width: 28px;
-  margin: 0vw 0.5vw;
+  margin: 0px 5px;
 }
 
 @media screen and (max-width: 600px) {
