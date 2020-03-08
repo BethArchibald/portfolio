@@ -92,11 +92,12 @@ h1 > a {
   margin: 1rem 0.75rem;
 }
 
-.nav-button > a {
-  color: white;
-  text-align: center;
+.list-nav > a {
+  display: flex;
+  width: auto;
   text-decoration: none;
-  font-size: 0.75rem;
+  margin: 0px 10px;
+  border-radius: 30px;
 }
 
 .nav-button {
@@ -104,17 +105,17 @@ h1 > a {
   border-radius: 30px;
   width: 100px;
   height: 23px;
-  margin: 0px 10px;
   display: flex;
   align-items: center;
   justify-content: center;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 0.75rem;
 }
 
 .nav-button:hover {
   background-color: grey;
-}
-
-.nav-button:hover > a {
   color: white;
 }
 
@@ -144,6 +145,7 @@ h1 > a {
     grid-template-columns: 1fr;
     justify-items: center;
     width: 100vw;
+    margin: 1rem 0rem;
   }
 
   .nav-button {
@@ -152,9 +154,6 @@ h1 > a {
     margin: 0.25em 0em;
     opacity: 1;
     background-color: #303030;
-  }
-
-  .nav-button > a {
     font-size: 1.5rem;
   }
 }
