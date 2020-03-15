@@ -330,6 +330,8 @@ h1 > a {
   width: 12rem;
   border-radius: 50%;
   margin: 1.5rem 0rem;
+  max-width: 1889px;
+  max-height: 1889px;
 }
 
 .contact-container {
