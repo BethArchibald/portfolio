@@ -260,6 +260,7 @@ h1 > a {
   grid-template-columns: 1fr 1fr 1fr;
   align-self: stretch;
   padding: 0.5vh 0vw;
+  align-items: center;
 }
 
 .video {
@@ -271,8 +272,18 @@ h1 > a {
   margin: 1.5vh 10px;
 }
 
-.video > p {
+.video-title {
   margin: 0.9rem 0rem;
+}
+
+.video-description {
+  margin: 1rem 0vw;
+  text-align: center;
+  width: 25vw;
+  max-width: 1920px;
+  height: 100px;
+  min-height: fit-content;
+  font-size: 0.85rem;
 }
 
 .video:hover {
@@ -310,6 +321,11 @@ h1 > a {
   .portfolio-iframe-div {
     width: 320px;
     height: 180px;
+  }
+
+  .video-description {
+    min-width: 320px;
+    height: fit-content;
   }
 }
 
