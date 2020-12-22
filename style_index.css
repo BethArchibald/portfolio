@@ -277,11 +277,11 @@ h1 > a {
 }
 
 .video-description {
-  margin: 1rem 0vw;
+  margin: 1rem 0px 0px 0px;
   text-align: center;
   width: 25vw;
   max-width: 1920px;
-  height: 100px;
+  height: 50px;
   min-height: fit-content;
   font-size: 0.85rem;
 }
